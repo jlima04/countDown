@@ -13,13 +13,17 @@ function countdown(){
     const seconds = Math.floor(totalSecs) % 60;
      
 
-    document.getElementById("days").innerHTML = days;
-    document.getElementById("hours").innerHTML = hours;
-    document.getElementById("minutes").innerHTML = minutes;
-    document.getElementById("seconds").innerHTML = seconds;
+    document.getElementById("days").innerHTML = format(days);
+    document.getElementById("hours").innerHTML = format(hours);
+    document.getElementById("minutes").innerHTML = format(minutes);
+    document.getElementById("seconds").innerHTML = format(seconds);
 
 
    console.log(days, hours, minutes, seconds);
+}
+
+function format(time){
+    return time < 10 ? `0${time}`: time;
 }
 
 countdown();
