@@ -5,7 +5,7 @@ function countdown(){
     let startDate = new Date().getTime();
 
      
-    const totalSecs = (endDate - startDate) / 1000;
+    const totalSecs = (wC - startDate) / 1000;
     
     const days = Math.floor(totalSecs/ 3600/ 24);
     const hours = Math.floor(totalSecs / 3600) % 24;
